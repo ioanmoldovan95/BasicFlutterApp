@@ -1,12 +1,14 @@
-import 'package:basic_app/ui/login/login_signup_page.dart';
-import 'package:basic_app/ui/root_page.dart';
+import 'package:basic_app/di/modules/MainModule.dart';
+import 'package:basic_app/ui/login/LoginSignupPage.dart';
+import 'package:basic_app/ui/Splash.dart';
 import 'package:flutter/material.dart';
 
-import 'logic/firebase/authetication.dart';
+import 'logic/firebase/Authetication.dart';
 
 void main() => runApp(MainApp());
 
 class MainApp extends StatelessWidget {
+  final MainModule mainModule = MainModule();
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,7 @@ class MainApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new RootPage(auth: new Auth())
+      home: new Splash()
     );
   }
 }

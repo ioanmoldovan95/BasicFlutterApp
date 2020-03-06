@@ -1,20 +1,19 @@
-import 'package:basic_app/logic/firebase/authetication.dart';
-import 'package:basic_app/ui/home/home_page.dart';
-import 'package:basic_app/ui/login/login_signup_page.dart';
+import 'package:basic_app/di/modules/AuthModule.dart';
+import 'package:basic_app/logic/firebase/Authetication.dart';
+import 'package:basic_app/ui/home/HomePage.dart';
+import 'package:basic_app/ui/login/LoginSignupPage.dart';
 import 'package:flutter/material.dart';
 
 enum AuthStatus { NOT_DETERMINED, LOGGED_OUT, LOGGED_IN }
 
-class RootPage extends StatefulWidget {
-  RootPage({this.auth});
-
-  final BaseAuth auth;
+class Splash extends StatefulWidget {
+  final BaseAuth _auth = AuthModule().get<BaseAuth>();
 
   @override
-  _RootPageState createState() => _RootPageState();
+  _SplashState createState() => _SplashState();
 }
 
-class _RootPageState extends State<RootPage> {
+class _SplashState extends State<Splash> {
   String _userId;
   AuthStatus authStatus;
 
@@ -26,7 +25,6 @@ class _RootPageState extends State<RootPage> {
         break;
       case AuthStatus.LOGGED_OUT:
         return new LoginSignupPage(
-          auth: widget.auth,
           loginCallback: loginCallback,
         );
         break;
@@ -34,7 +32,6 @@ class _RootPageState extends State<RootPage> {
         if(_userId != null && _userId.isNotEmpty){
           return new HomePage(
             userId: _userId,
-            auth: widget.auth,
             logoutCallback: logoutCallback,
           );
         } else {
@@ -49,7 +46,7 @@ class _RootPageState extends State<RootPage> {
   @override
   void initState() {
     super.initState();
-    widget.auth.getCurrentUser().then((user) {
+    widget._auth.getCurrentUser().then((user) {
       setState(() {
         if (user != null) {
           _userId = user?.uid;
@@ -70,7 +67,7 @@ class _RootPageState extends State<RootPage> {
   }
 
   void loginCallback() {
-    widget.auth.getCurrentUser().then((user) {
+    widget._auth.getCurrentUser().then((user) {
       setState(() {
         _userId = user.uid.toString();
       });

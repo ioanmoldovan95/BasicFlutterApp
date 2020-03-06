@@ -1,10 +1,11 @@
-import 'package:basic_app/logic/firebase/authetication.dart';
+import 'package:basic_app/di/modules/AuthModule.dart';
+import 'package:basic_app/logic/firebase/Authetication.dart';
 import 'package:flutter/material.dart';
 
 class LoginSignupPage extends StatefulWidget {
-  LoginSignupPage({this.auth, this.loginCallback});
+  LoginSignupPage({this.loginCallback});
 
-  final BaseAuth auth;
+  final BaseAuth auth = AuthModule().get<BaseAuth>();
   final VoidCallback loginCallback;
 
   @override

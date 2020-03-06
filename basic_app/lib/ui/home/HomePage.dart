@@ -1,10 +1,11 @@
-import 'package:basic_app/logic/firebase/authetication.dart';
+import 'package:basic_app/di/modules/AuthModule.dart';
+import 'package:basic_app/logic/firebase/Authetication.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({this.auth, this.userId, this.logoutCallback});
+  HomePage({this.userId, this.logoutCallback});
 
-  final BaseAuth auth;
+  final BaseAuth auth = AuthModule().get<BaseAuth>();
   final String userId;
   final VoidCallback logoutCallback;
 

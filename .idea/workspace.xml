@@ -2,28 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20dbb506-3472-4890-b880-074653fcc689" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic_app/android/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic_app/assets/flutter-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic_app/lib/logic/firebase/authetication.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic_app/lib/ui/home/home_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic_app/lib/ui/login/login_signup_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic_app/lib/ui/root_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_app/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_app/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_app/lib/Main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/Main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_app/lib/di/modules/AuthModule.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/di/modules/AuthModule.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_app/lib/logic/firebase/Authetication.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/logic/firebase/Authetication.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_app/lib/ui/Splash.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/ui/Splash.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_app/lib/ui/home/HomePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/ui/home/HomePage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_app/lib/ui/login/LoginSignupPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/ui/login/LoginSignupPage.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="QV702C9V1E" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -50,6 +42,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Dart" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -62,8 +55,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
-      <option name="filePath" value="$PROJECT_DIR$/basic_app/lib/main.dart" />
+    <configuration name="Main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/basic_app/lib/Main.dart" />
       <method v="2" />
     </configuration>
   </component>
@@ -78,6 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1583398590749</updated>
       <workItem from="1583398611477" duration="13139000" />
+      <workItem from="1583484840428" duration="2113000" />
+      <workItem from="1583487401322" duration="1990000" />
     </task>
     <servers />
   </component>
@@ -92,38 +87,42 @@
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="837" y="310" key="#com.intellij.ide.util.MemberChooser/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583411464724" />
-    <state width="2006" height="313" key="GridCell.Tab.0.bottom" timestamp="1583417898667">
+    <state width="2006" height="305" key="GridCell.Tab.0.bottom" timestamp="1583491666822">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="313" key="GridCell.Tab.0.bottom/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583417898667" />
-    <state width="2006" height="313" key="GridCell.Tab.0.center" timestamp="1583417898666">
+    <state width="2006" height="305" key="GridCell.Tab.0.bottom/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491666822" />
+    <state width="2006" height="305" key="GridCell.Tab.0.center" timestamp="1583491666821">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="313" key="GridCell.Tab.0.center/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583417898666" />
-    <state width="2006" height="313" key="GridCell.Tab.0.left" timestamp="1583417898666">
+    <state width="2006" height="305" key="GridCell.Tab.0.center/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491666821" />
+    <state width="2006" height="305" key="GridCell.Tab.0.left" timestamp="1583491666820">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="313" key="GridCell.Tab.0.left/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583417898666" />
-    <state width="2006" height="313" key="GridCell.Tab.0.right" timestamp="1583417898666">
+    <state width="2006" height="305" key="GridCell.Tab.0.left/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491666820" />
+    <state width="2006" height="305" key="GridCell.Tab.0.right" timestamp="1583491666822">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="313" key="GridCell.Tab.0.right/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583417898666" />
-    <state width="2006" height="301" key="GridCell.Tab.1.bottom" timestamp="1583416541324">
+    <state width="2006" height="305" key="GridCell.Tab.0.right/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491666822" />
+    <state width="2006" height="293" key="GridCell.Tab.1.bottom" timestamp="1583491311984">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="301" key="GridCell.Tab.1.bottom/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583416541324" />
-    <state width="2006" height="301" key="GridCell.Tab.1.center" timestamp="1583416541323">
+    <state width="2006" height="293" key="GridCell.Tab.1.bottom/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491311984" />
+    <state width="2006" height="293" key="GridCell.Tab.1.center" timestamp="1583491311982">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="301" key="GridCell.Tab.1.center/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583416541323" />
-    <state width="2006" height="301" key="GridCell.Tab.1.left" timestamp="1583416541323">
+    <state width="2006" height="293" key="GridCell.Tab.1.center/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491311982" />
+    <state width="2006" height="293" key="GridCell.Tab.1.left" timestamp="1583491311981">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="301" key="GridCell.Tab.1.left/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583416541323" />
-    <state width="2006" height="301" key="GridCell.Tab.1.right" timestamp="1583416541324">
+    <state width="2006" height="293" key="GridCell.Tab.1.left/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491311981" />
+    <state width="2006" height="293" key="GridCell.Tab.1.right" timestamp="1583491311983">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="301" key="GridCell.Tab.1.right/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583416541324" />
+    <state width="2006" height="293" key="GridCell.Tab.1.right/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491311983" />
+    <state x="768" y="305" key="RollbackChangesDialog" timestamp="1583491451147">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="768" y="305" key="RollbackChangesDialog/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491451147" />
     <state x="533" y="226" key="SettingsEditor" timestamp="1583411932304">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
@@ -132,37 +131,27 @@
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="576" y="330" width="896" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583406303948" />
-    <state x="690" y="223" width="667" height="729" key="find.popup" timestamp="1583418032724">
+    <state x="690" y="223" width="667" height="729" key="find.popup" timestamp="1583491181590">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="690" y="223" width="667" height="729" key="find.popup/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583418032724" />
-    <state x="689" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1583417443559">
+    <state x="690" y="223" width="667" height="729" key="find.popup/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491181590" />
+    <state x="689" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1583485847261">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="689" y="276" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583417443559" />
+    <state x="689" y="276" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583485847261" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/basic_app/lib/ui/root_page.dart</url>
-          <line>50</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/basic_app/lib/ui/root_page.dart</url>
-          <line>51</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/basic_app/lib/ui/root_page.dart</url>
-          <line>22</line>
+          <url>file://$PROJECT_DIR$/basic_app/lib/ui/Splash.dart</url>
+          <line>21</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/basic_app/lib/ui/root_page.dart</url>
-          <line>53</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/flutter_simple_dependency_injection-1.0.2+1/lib/src/injector.dart</url>
+          <line>152</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
