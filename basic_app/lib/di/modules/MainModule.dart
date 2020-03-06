@@ -1,5 +1,6 @@
 import 'package:basic_app/di/AbstractModule.dart';
 import 'package:basic_app/di/modules/AuthModule.dart';
+import 'package:basic_app/di/modules/UtilModule.dart';
 import 'package:flutter_simple_dependency_injection/injector.dart';
 
 class MainModule extends AbstractModule {
@@ -17,5 +18,6 @@ class MainModule extends AbstractModule {
   @override
   void configure(Injector injector) {
     AuthModule().configure(injector);
+    UtilModule().configure(injector);
   }
 }

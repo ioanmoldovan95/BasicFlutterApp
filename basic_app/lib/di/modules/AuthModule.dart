@@ -12,6 +12,6 @@ class AuthModule extends AbstractModule {
 
   @override
   void configure(Injector injector) {
-    injector.map<BaseAuth>((i) => Auth(), isSingleton: true);
+    injector.map<BaseAuth>((_) => Auth(), isSingleton: true);
   }
 }
