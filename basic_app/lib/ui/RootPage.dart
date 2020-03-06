@@ -1,19 +1,18 @@
 import 'package:basic_app/di/modules/AuthModule.dart';
+import 'package:basic_app/logic/auth/AuthStatus.dart';
 import 'package:basic_app/logic/firebase/Authetication.dart';
 import 'package:basic_app/ui/home/HomePage.dart';
 import 'package:basic_app/ui/login/LoginSignupPage.dart';
 import 'package:flutter/material.dart';
 
-enum AuthStatus { NOT_DETERMINED, LOGGED_OUT, LOGGED_IN }
-
-class Splash extends StatefulWidget {
+class RootPage extends StatefulWidget {
   final BaseAuth _auth = AuthModule().get<BaseAuth>();
 
   @override
-  _SplashState createState() => _SplashState();
+  _RootPageState createState() => _RootPageState();
 }
 
-class _SplashState extends State<Splash> {
+class _RootPageState extends State<RootPage> {
   String _userId;
   AuthStatus authStatus;
 
@@ -26,17 +25,12 @@ class _SplashState extends State<Splash> {
       case AuthStatus.LOGGED_OUT:
         return new LoginSignupPage(
           loginCallback: loginCallback,
+          loggedOutUseCallback: loggedOutUseCallback,
         );
         break;
+      case AuthStatus.LOGGED_OUT_USE:
       case AuthStatus.LOGGED_IN:
-        if(_userId != null && _userId.isNotEmpty){
-          return new HomePage(
-            userId: _userId,
-            logoutCallback: logoutCallback,
-          );
-        } else {
-          return buildWaitingScreen();
-        }
+        return new HomePage(userId: _userId, logoutCallback: logoutCallback);
         break;
       default:
         return buildWaitingScreen();
@@ -74,6 +68,13 @@ class _SplashState extends State<Splash> {
     });
     setState(() {
       authStatus = AuthStatus.LOGGED_IN;
+    });
+  }
+
+  void loggedOutUseCallback() {
+    setState(() {
+      _userId = "";
+      authStatus = AuthStatus.LOGGED_OUT_USE;
     });
   }
 

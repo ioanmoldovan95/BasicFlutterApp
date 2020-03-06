@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="20dbb506-3472-4890-b880-074653fcc689" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/basic_app/android/app/src/main/res/drawable/ic_flutter_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_app/lib/logic/auth/AuthStatus.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_app/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_app/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic_app/lib/Main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/Main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_app/lib/di/modules/AuthModule.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/di/modules/AuthModule.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_app/lib/logic/firebase/Authetication.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/logic/firebase/Authetication.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_app/lib/ui/Splash.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/ui/Splash.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_app/lib/ui/Splash.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/ui/RootPage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic_app/lib/ui/home/HomePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/ui/home/HomePage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic_app/lib/ui/login/LoginSignupPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/basic_app/lib/ui/login/LoginSignupPage.dart" afterDir="false" />
     </list>
@@ -15,10 +22,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="QV702C9V1E" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="resourceFile" />
         <option value="Dart File" />
       </list>
     </option>
@@ -37,8 +59,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DEBUGGABLE_DEVICE" value="sony-h8266-QV702C9V1E" />
+    <property name="DEBUGGABLE_PROCESS" value="com.jon.basicflutterapp" />
+    <property name="DEBUGGER_ID" value="Java" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -87,42 +113,46 @@
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="837" y="310" key="#com.intellij.ide.util.MemberChooser/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583411464724" />
-    <state width="2006" height="305" key="GridCell.Tab.0.bottom" timestamp="1583491666822">
+    <state x="887" y="360" key="AndroidProcessChooserDialog" timestamp="1583495311274">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="305" key="GridCell.Tab.0.bottom/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491666822" />
-    <state width="2006" height="305" key="GridCell.Tab.0.center" timestamp="1583491666821">
+    <state x="887" y="360" key="AndroidProcessChooserDialog/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583495311274" />
+    <state width="2006" height="293" key="GridCell.Tab.0.bottom" timestamp="1583497646742">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="305" key="GridCell.Tab.0.center/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491666821" />
-    <state width="2006" height="305" key="GridCell.Tab.0.left" timestamp="1583491666820">
+    <state width="2006" height="293" key="GridCell.Tab.0.bottom/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583497646742" />
+    <state width="2006" height="293" key="GridCell.Tab.0.center" timestamp="1583497646741">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="305" key="GridCell.Tab.0.left/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491666820" />
-    <state width="2006" height="305" key="GridCell.Tab.0.right" timestamp="1583491666822">
+    <state width="2006" height="293" key="GridCell.Tab.0.center/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583497646741" />
+    <state width="2006" height="293" key="GridCell.Tab.0.left" timestamp="1583497646741">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="305" key="GridCell.Tab.0.right/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491666822" />
-    <state width="2006" height="293" key="GridCell.Tab.1.bottom" timestamp="1583491311984">
+    <state width="2006" height="293" key="GridCell.Tab.0.left/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583497646741" />
+    <state width="2006" height="293" key="GridCell.Tab.0.right" timestamp="1583497646742">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="293" key="GridCell.Tab.1.bottom/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491311984" />
-    <state width="2006" height="293" key="GridCell.Tab.1.center" timestamp="1583491311982">
+    <state width="2006" height="293" key="GridCell.Tab.0.right/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583497646742" />
+    <state width="2006" height="293" key="GridCell.Tab.1.bottom" timestamp="1583497646743">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="293" key="GridCell.Tab.1.center/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491311982" />
-    <state width="2006" height="293" key="GridCell.Tab.1.left" timestamp="1583491311981">
+    <state width="2006" height="293" key="GridCell.Tab.1.bottom/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583497646743" />
+    <state width="2006" height="293" key="GridCell.Tab.1.center" timestamp="1583497646743">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="293" key="GridCell.Tab.1.left/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491311981" />
-    <state width="2006" height="293" key="GridCell.Tab.1.right" timestamp="1583491311983">
+    <state width="2006" height="293" key="GridCell.Tab.1.center/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583497646743" />
+    <state width="2006" height="293" key="GridCell.Tab.1.left" timestamp="1583497646742">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state width="2006" height="293" key="GridCell.Tab.1.right/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491311983" />
-    <state x="768" y="305" key="RollbackChangesDialog" timestamp="1583491451147">
+    <state width="2006" height="293" key="GridCell.Tab.1.left/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583497646742" />
+    <state width="2006" height="293" key="GridCell.Tab.1.right" timestamp="1583497646743">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="768" y="305" key="RollbackChangesDialog/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491451147" />
+    <state width="2006" height="293" key="GridCell.Tab.1.right/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583497646743" />
+    <state x="768" y="305" key="RollbackChangesDialog" timestamp="1583494561907">
+      <screen x="0" y="23" width="2048" height="1129" />
+    </state>
+    <state x="768" y="305" key="RollbackChangesDialog/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583494561907" />
     <state x="533" y="226" key="SettingsEditor" timestamp="1583411932304">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
@@ -131,27 +161,22 @@
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="576" y="330" width="896" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583406303948" />
-    <state x="690" y="223" width="667" height="729" key="find.popup" timestamp="1583491181590">
+    <state x="690" y="223" width="667" height="729" key="find.popup" timestamp="1583493566900">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="690" y="223" width="667" height="729" key="find.popup/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583491181590" />
-    <state x="689" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1583485847261">
+    <state x="690" y="223" width="667" height="729" key="find.popup/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583493566900" />
+    <state x="689" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1583493560117">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="689" y="276" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583485847261" />
+    <state x="689" y="276" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129/2048.95.1920.1057/-1920.95.1920.1057@0.23.2048.1129" timestamp="1583493560117" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/basic_app/lib/ui/Splash.dart</url>
-          <line>21</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/flutter_simple_dependency_injection-1.0.2+1/lib/src/injector.dart</url>
-          <line>152</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/basic_app/lib/ui/RootPage.dart</url>
+          <line>20</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

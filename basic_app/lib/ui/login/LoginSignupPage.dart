@@ -3,10 +3,11 @@ import 'package:basic_app/logic/firebase/Authetication.dart';
 import 'package:flutter/material.dart';
 
 class LoginSignupPage extends StatefulWidget {
-  LoginSignupPage({this.loginCallback});
+  LoginSignupPage({this.loginCallback, this.loggedOutUseCallback});
 
   final BaseAuth auth = AuthModule().get<BaseAuth>();
   final VoidCallback loginCallback;
+  final VoidCallback loggedOutUseCallback;
 
   @override
   _LoginSignupPageState createState() => new _LoginSignupPageState();
@@ -21,6 +22,9 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
 
   bool _isLoading;
   bool _isLoginForm;
+
+  final TextStyle secondaryButtonStyle =
+      TextStyle(fontSize: 18.0, fontWeight: FontWeight.w300);
 
   @override
   Widget build(BuildContext context) {
@@ -57,6 +61,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
               showPasswordInput(),
               showPrimaryButton(),
               showSecondaryButton(),
+              showLoggedOutUseButton(),
               showErrorMessage(),
             ],
           )),
@@ -151,7 +156,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
     return new FlatButton(
       child: new Text(
         _isLoginForm ? 'Create an account' : 'Already have an account? Sign in',
-        style: new TextStyle(fontSize: 18.0, fontWeight: FontWeight.w300),
+        style: secondaryButtonStyle,
       ),
       onPressed: toggleFormMode,
     );
@@ -173,6 +178,15 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
         height: 0.0,
       );
     }
+  }
+
+  Widget showLoggedOutUseButton() {
+    return new FlatButton(
+        onPressed: widget.loggedOutUseCallback,
+        child: new Text(
+          'Use the app logged out',
+          style: secondaryButtonStyle,
+        ));
   }
 
   bool validateAndSave() {

@@ -1,6 +1,6 @@
 import 'package:basic_app/di/modules/MainModule.dart';
 import 'package:basic_app/ui/login/LoginSignupPage.dart';
-import 'package:basic_app/ui/Splash.dart';
+import 'package:basic_app/ui/RootPage.dart';
 import 'package:flutter/material.dart';
 
 import 'logic/firebase/Authetication.dart';
@@ -17,7 +17,7 @@ class MainApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new Splash()
+      home: new RootPage()
     );
   }
 }
